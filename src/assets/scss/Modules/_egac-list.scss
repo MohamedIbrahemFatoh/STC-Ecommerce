@@ -1,0 +1,117 @@
+div.create-new {
+  button {
+    font-size: rem(16);
+    font-weight: $fontSemiBold;
+  }
+}
+.img-cricle {
+  color: $egac-darkRed;
+  min-width: rem(50);
+  width: rem(50);
+  height: rem(50);
+  background: white;
+  border-radius: 50%;
+  box-shadow: 0px 2px 4px #0000001a;
+  text-align: center;
+  vertical-align: middle;
+  display: flex;
+  align-items: center;
+  align-content: center;
+  overflow: hidden;
+}
+.action-tabs {
+  background: #f7f7f7;
+  margin: auto;
+  width: fit-content;
+  height: rem(40);
+  border-radius: rem(6);
+  margin-bottom: rem(50);
+  box-shadow: 0px 3px 6px #0000001a;
+  .tab-item {
+    font-size: rem(16);
+    font-weight: $fontMedium;
+    padding: rem(10) rem(15);
+    display: inline-block;
+    cursor: pointer;
+    color: #777777;
+
+    &.active {
+      background: $egac-lightRed;
+      color: $white;
+    }
+    &:first-child{
+      &.active{
+        border-top-left-radius: rem(6);
+        border-bottom-left-radius: rem(6);
+      }
+    }
+    &:last-child{
+      &.active{
+        border-top-right-radius: rem(6);
+        border-bottom-right-radius: rem(6);
+      }
+    }
+    @media (max-width: 400px) {
+      display: block;
+      text-align: center;
+    }
+  }
+  @media (max-width: 400px) {
+    height: auto;
+  }
+}
+.table-responsive table.table-primary {
+  padding: 1px !important;
+}
+.table-primary tbody tr:hover {
+  box-shadow: 0 0 2px #0761ce !important;
+}
+.table-primary thead th {
+  border-bottom: none !important;
+}
+.egac-paginator {
+  .mat-paginator {
+    background: #f2f2f2 !important;
+  }
+  .mat-paginator-page-size-select {
+    .mat-form-field-flex {
+      // background-color: transparent !important;
+      // border-radius: 0 !important;
+      // border: none !important;
+    }
+  }
+  .mat-form-field-appearance-legacy .mat-form-field-underline {
+    // background-color: transparent;
+  }
+
+  .mat-select-value {
+    color: #777777;
+    font-weight: bold;
+    font-size: 15px;
+  }
+  .mat-select-arrow {
+    color: #777777;
+  }
+  .mat-option {
+    padding: 0 !important;
+  }
+  .mat-option-text {
+    text-align: right;
+  }
+}
+.mat-form-field-appearance-fill .mat-select-arrow-wrapper {
+  transform: translateY(0%) !important;
+}
+.count-item {
+  margin-#{$right}: rem(25);
+  .counter {
+    font-size: rem(16);
+    font-weight: $fontSemiBold;
+    color: #333333;
+  }
+  .title {
+    font-size: rem(16) !important;
+    font-weight: $fontMedium !important;
+    color: #666666 !important;
+  }
+}

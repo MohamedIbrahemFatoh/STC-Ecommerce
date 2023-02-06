@@ -1,0 +1,21 @@
+.confirm {
+  &_title {
+    font-size: rem(16);
+    font-weight: 500;
+  }
+  padding: rem(20);
+  &_img {
+    margin: rem(30) rem(0);
+    color: $egac-btn;
+    display: block;
+    text-align: center;
+    .mat-icon {
+      font-size: rem(80);
+      width: rem(80) !important;
+      height: rem(80) !important;
+    }
+  }
+  &_action {
+    text-align: center;
+  }
+}

@@ -1,0 +1,23 @@
+<div class="basic">
+  <header>
+    <div class="container-fluid">
+      <div class="d-flex align-items-center justify-content-between">
+        <a class="logo">
+          <img alt="" src="./assets/images/Stc-logo.png"/>
+        </a>
+        <div class="d-flex">
+          <a (click)="changeLanguage()">
+            <img alt="" src="./assets/images/icons/language-icon.svg"/>
+            <span>
+              {{ 'language' | translate }}
+            </span></a
+          >
+          <a class="px-2" (click)="logOut()">{{ 'Log Out' | translate }}</a>
+        </div>
+      </div>
+    </div>
+  </header>
+  <div>
+    <router-outlet></router-outlet>
+  </div>
+</div>

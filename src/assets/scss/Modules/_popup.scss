@@ -1,0 +1,18 @@
+.pop-header {
+    padding: rem(20);
+    background-color: #E7EBF2;
+    h2 {
+        color: $blue-txt;
+        font-weight: $fontSemiBold;
+        margin: 0;
+        font-size: rem(18);
+        line-height: rem(30);
+    }
+    p {
+        font-size: rem(14);
+        line-height: rem(28);
+        color: $grey-6;
+        margin: 0;
+        font-weight: $fontMedium;
+    }
+}

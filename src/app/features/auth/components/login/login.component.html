@@ -1,0 +1,70 @@
+<section class="auth-page">
+  <div class="background-splash"></div>
+  <div class="authTitle">
+    <h2 class="authTitle_title"> {{'Welcome Back'| translate}}</h2>
+    <h2 class="authTitle_subTitle">{{'Sign in to your account...' | translate}}</h2>
+  </div>
+  <div class="auth-card">
+    <form (ngSubmit)="logIn()" [formGroup]="formGroup">
+      <mat-form-field appearance="outline" class="form-group login">
+        <mat-label>{{'user Name' | translate}}</mat-label>
+        <input
+          formControlName="userName"
+          matInput
+          maxlength="200"
+        />
+        <mat-error *ngIf="hasError('userName', 'required')">
+          {{'Required' | translate}}
+        </mat-error>
+      </mat-form-field>
+      <mat-form-field appearance="outline" class="form-group">
+        <mat-label>{{'Password' | translate}}</mat-label>
+        <input
+          [type]="hidePassword ? 'password' : 'text'"
+          formControlName="password"
+          matInput
+          maxlength="200"
+        />
+        <button
+          (click)="hidePassword = !hidePassword"
+          [attr.aria-label]="'Hide password'"
+          [attr.aria-pressed]="hidePassword"
+          class="password-visibility"
+          mat-icon-button
+          matSuffix
+          type="button"
+        >
+          <mat-icon>{{
+            hidePassword ? 'visibility_off' : 'visibility'
+            }}</mat-icon>
+        </button>
+        <mat-error *ngIf="hasError('password', 'required')">
+          {{'Required' | translate}}
+        </mat-error>
+        <!-- <mat-error *ngIf="hasError('password', 'minlength')">
+          {{'The entered value below the minimum length of 5'| translate}}
+        </mat-error> -->
+      </mat-form-field>
+      <div class="form-group">
+        <re-captcha (resolved)="captcha = $event"></re-captcha>
+        <p
+          *ngIf="!captcha && isSubmitted"
+          class="invalid-feedback mt-2 d-block"
+        >
+        {{'Required' | translate}}
+        </p>
+      </div>
+      <div class="btn-container">
+        <button
+          [class.loading]="loading"
+          [disabled]="loading"
+          class="w-100"
+          color="primary"
+          mat-raised-button
+        >
+          {{'Login' | translate}}
+        </button>
+      </div>
+    </form>
+  </div>
+</section>

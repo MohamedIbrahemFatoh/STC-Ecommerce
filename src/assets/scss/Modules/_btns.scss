@@ -1,0 +1,156 @@
+body .mat-button-base {
+  // border: 1px solid;
+  white-space: initial;
+  &.mat-icon-button {
+    // border: 1px solid;
+    border-radius: 4px;
+    // width: rem(46);
+    // height: rem(46);
+    line-height: 36px;
+  }
+  &:not(.mat-icon-button) {
+    img,
+    svg {
+      max-width: rem(15);
+      max-height: rem(15);
+    }
+  }
+  &.small {
+    padding: rem(10) rem(18);
+    font-size: rem(16);
+    line-height: rem(19);
+    font-weight: $fontSemiBold;
+  }
+  .mat-button-wrapper > span > span {
+    display: block;
+    font-size: rem(13);
+    line-height: rem(15);
+    margin-top: rem(4);
+    color: $white;
+  }
+  &.mat_ {
+    &icon {
+      padding: 0;
+      width: rem(30);
+      height: rem(30);
+      display: flex;
+      align-content: center;
+      justify-content: center;
+      border-radius: rem(4);
+      &.delete {
+        img {
+          max-width: rem(10);
+        }
+      }
+    }
+    &grey,
+    &default {
+      border-color: #e9e9e9;
+      background-color: #e9e9e9;
+      color: #666666;
+    }
+    &light-grey {
+      border-color: #f7f7f7;
+      background-color: #f7f7f7;
+      color: #555555;
+      .mat-button-wrapper > span > span { color: $grey-9; }
+    }
+    &red {
+      border-color: #b31a20;
+      background-color: #b31a20;
+      color: #ffffff;
+    }
+    &red-outline {
+      border: 1px solid;
+      border-color: #D60000;
+      background-color: #ffffff;
+      color: #D60000;
+    }
+    &green {
+      border-color: #25aa00;
+      background-color: #25aa00;
+      color: #ffffff;
+    }
+    &green-outline {
+      border: 1px solid;
+      border-color: #25AA00;
+      background-color: #ffffff;
+      color: #25AA00;
+    }
+    &orange {
+      border-color: $orange-300 !important;
+      background-color: $orange-300 !important;
+      color: #ffffff !important;
+    }
+    &orange-outline {
+      border: 1px solid;
+      border-color: $orange-300;
+      background-color: transparent;
+      color: $orange-300;
+    }
+    &orange-outline-background-orange {
+      border-color: $orange-300;
+      background-color: #fdf8f0;
+      color: $orange-300;
+    }
+    &light-orange {
+      border-color: $orange-140;
+      background-color: $orange-140;
+      color: $orange-300;
+    }
+    &light-blue {
+      border-color: $egac-primary;
+      background-color: $egac-primary;
+      color: #555555;
+    }
+    &light-blue-outline {
+      border: 1px solid;
+      border-color: $egac-primary;
+      background-color: transparent;
+      color: $egac-primary;
+    }
+  }
+  &:disabled {
+    opacity: 0.5;
+  }
+  &.multi-add {
+    padding: rem(12) rem(15);
+    .mat-button-wrapper {
+      font-size: rem(14);
+      line-height: rem(18);
+    }
+  }
+}
+
+.mat-icon-button {
+  &.mat- {
+    &color- {
+      &red {
+        color: #D60000 !important;
+      }
+      &green {
+        color: #25aa00 !important;
+      }
+    }
+  }
+  &.active {
+    border: 1px solid;
+  }
+}
+
+.text- {
+  &orange {
+    color: $egac-btn !important;
+  }
+  &red {
+    color: $egac-darkRed !important;
+  }
+}
+.optional-hint {
+  color: $grey-9;
+  font-size: rem(14);
+  font-weight: $fontMedium;
+}
+.font-14 {
+  font-size: rem(14) !important;
+}

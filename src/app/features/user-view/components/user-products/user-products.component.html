@@ -1,0 +1,47 @@
+<div class="page container-fluid">
+  <div *ngIf="dataLoading" class="dataLoading">
+    <mat-spinner class="m-auto" diameter="50"></mat-spinner>
+  </div>
+
+  <ng-container *ngIf="!dataLoading">
+    <ng-container *ngIf="categoriesAndProductsList?.length; else dataEmpty">
+      <div class="most-selling offer mb-5" *ngFor="let category of categoriesAndProductsList">
+        <div class="category-title mb-4">{{category.categoryName}}</div>
+        <div class="row m-0">
+          <div
+            class="col-lg-4 col-md-6 col-12 card-style"
+            *ngFor="let product of category.categoryProducts"
+          >
+            <a>
+              <div class="shared-card">
+                <div class="image">
+
+                    <img class="main-img" [src]="product.image" alt="" />
+                    <div class="days">
+                      <span> {{'Price' |translate}}: {{ product.price }}</span> -
+                      <span> {{'Rating' |translate}}: {{ product.rating.rate }}</span>
+                    </div>
+
+                </div>
+                <div class="content">
+                  <div class="name-price">
+                    <span class="name">{{ product.title }}</span>
+                  </div>
+                  <div class="description" [matTooltip]="product.description">
+                    {{ product.description.substring(0,80) }}
+                  </div>
+                </div>
+              </div>
+            </a>
+          </div>
+        </div>
+        <hr>
+      </div>
+    </ng-container>
+  </ng-container>
+  <ng-template #dataEmpty>
+    <div class="data-empty">
+      <p>{{'No Data Found' | translate}}</p>
+    </div>
+  </ng-template>
+</div>

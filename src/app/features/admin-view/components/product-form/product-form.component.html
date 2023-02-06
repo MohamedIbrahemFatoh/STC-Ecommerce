@@ -1,0 +1,79 @@
+<div class="mat-modal__head" mat-dialog-title>
+  <div class="modal-header">
+    <h5 class="modal-title" *ngIf="!updateMode"> {{'Add New Product' | translate}} </h5>
+    <h5 class="modal-title" *ngIf="updateMode"> {{'Update Product' | translate}} </h5>
+    <button aria-label="Close" class="close" mat-dialog-close type="button">
+      <span aria-hidden="true">&times;</span>
+    </button>
+  </div>
+</div>
+<mat-dialog-content class="mat-modal__content">
+  <div class="modal-body">
+    <form [formGroup]="formGroup">
+      <div class="fields-group mb-0">
+        <div class="row">
+          <div class="col-12">
+            <mat-form-field appearance="outline" class="form-group">
+              <mat-label> {{'Product Title' | translate}} </mat-label>
+              <input formControlName="title" matInput maxlength="200"/>
+              <mat-error *ngIf="hasError('title', 'required')">
+                {{'Required' | translate}}
+              </mat-error>
+            </mat-form-field>
+          </div>
+          <div class="col-12">
+            <mat-form-field appearance="outline" class="form-group">
+              <mat-label> {{'Product Category' | translate}} </mat-label>
+              <input formControlName="category" matInput maxlength="200"/>
+              <mat-error *ngIf="hasError('category', 'required')">
+                {{'Required' | translate}}
+              </mat-error>
+            </mat-form-field>
+          </div>
+          <div class="col-12">
+            <mat-form-field appearance="outline" class="form-group">
+              <mat-label> {{'Product Description' | translate}} </mat-label>
+              <textarea
+                class="committee-desc"
+                formControlName="description"
+                matInput
+                maxlength="500"
+              ></textarea>
+              <mat-error *ngIf="hasError('description', 'required')">
+                {{'Required' | translate}}
+              </mat-error>
+            </mat-form-field>
+          </div>
+          <div class="col-12">
+            <mat-form-field appearance="outline" class="form-group">
+              <mat-label> {{'Product Price' | translate}} </mat-label>
+              <input formControlName="price" matInput maxlength="200" appOnlynumber/>
+              <mat-error *ngIf="hasError('price', 'required')">
+                {{'Required' | translate}}
+              </mat-error>
+            </mat-form-field>
+          </div>
+        </div>
+      </div>
+      <!-- buttons -->
+      <div class="col-sm-12 mt-1">
+        <div class="btn-container">
+          <!-- <button *ngIf="tabIndex" (click)="onBack(tabIndex)" mat-button>
+            Back
+          </button> -->
+          <button
+            (click)="submit()"
+            [class.loading]="Loading"
+            [disabled]="Loading"
+            class="btn-create w-100"
+            color="primary"
+            mat-raised-button
+          >
+            <span *ngIf="!updateMode"> {{'Add New Product' | translate}} </span>
+            <span *ngIf="updateMode"> {{'Update Product' | translate}} </span>
+          </button>
+        </div>
+      </div>
+    </form>
+  </div>
+</mat-dialog-content>

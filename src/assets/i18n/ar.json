@@ -1,0 +1,28 @@
+{
+  "Welcome Back": "مرحبًا بعودتك",
+  "Sign in to your account...": "تسجيل الدخول إلى حسابك...",
+  "user Name": "اسم المستخدم",
+  "Password": "كلمة المرور",
+  "The entered value below the minimum length of 5": "القيمة التي تم إدخالها أقل من الحد الأدنى وهو 5",
+  "Login": "تسجيل الدخول",
+  "language": "English",
+
+  "Products":"المنتجات",
+  "Product": "منتج",
+  "Add New Product": "اضافة منتج جديد",
+  "Update Product": "تحديث المنتج",
+  "Product Title": "اسم المنتج",
+  "Product Price": "سعر المنتج",
+  "Product Description": "وصف المنتج",
+  "Product Category": "فئة المنتج",
+  "Product Added Successfully": "تمت إضافة المنتج بنجاح",
+  "Product Updated Successfully": "تم تحديث المنتج بنجاح",
+  "Title": "الاسم",
+  "Category": "الفئه",
+  "Rating": "التقييم",
+  "Price": "السعر",
+  "Edit": "تعديل",
+  "Delete": "حذف",
+  "No Data Found": "لم يتم العثور على بيانات",
+  "Log Out": "تسجيل الخروج"
+}

@@ -1,0 +1,28 @@
+{
+  "Welcome Back": "Welcome Back",
+  "Sign in to your account...": "Sign in to your account...",
+  "user Name": "user Name",
+  "Password": "Password",
+  "The entered value below the minimum length of 5": "The entered value below the minimum length of 5",
+  "Login": "Login",
+  "language": "العربية",
+
+  "Products":"Products",
+  "Product": "Product",
+  "Add New Product": "Add New Product",
+  "Update Product": "Update Product",
+  "Product Title": "Product Title",
+  "Product Price": "Product Price",
+  "Product Description": "Product Description",
+  "Product Category": "Product Category",
+  "Product Added Successfully": "Product Added Successfully",
+  "Product Updated Successfully": "Product Updated Successfully",
+  "Title": "Title",
+  "Category": "Category",
+  "Rating": "Rating",
+  "Price": "Price",
+  "Edit": "Edit",
+  "Delete": "Delete",
+  "No Data Found": "No Data Found",
+  "Log Out": "Log Out"
+}

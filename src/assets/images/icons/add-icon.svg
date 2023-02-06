@@ -1,0 +1,6 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 20 20">
+  <g id="add-icon" transform="translate(-1161 -628.999)">
+    <rect id="bg" width="20" height="20" rx="2" transform="translate(1161 628.999)" fill="#86241d"/>
+    <path id="plus" d="M14.5,8.667H10.333V4.5H8.667V8.667H4.5v1.667H8.667V14.5h1.667V10.333H14.5Z" transform="translate(1161.5 629.5)" fill="#fff"/>
+  </g>
+</svg>
