@@ -1,9 +1,0 @@
-<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="30" height="40" viewBox="0 0 30 40">
-  <defs>
-    <linearGradient id="linear-gradient" x1="0.5" x2="0.5" y2="1" gradientUnits="objectBoundingBox">
-      <stop offset="0" stop-color="#d9952e"/>
-      <stop offset="1" stop-color="#efc154"/>
-    </linearGradient>
-  </defs>
-  <path id="blood-pressure-icon" d="M19.5,40a15,15,0,0,0,15-15c0-4.138-2.806-7.26-6.08-10.906S21.376,6.258,19.5,0c0,0-15,14.214-15,25a15,15,0,0,0,15,15ZM16.116,11.616a33.3,33.3,0,0,0-5.232,7.824l2.234,1.12a30.906,30.906,0,0,1,4.768-7.176l-1.77-1.77Z" transform="translate(-4.5)" fill-rule="evenodd" fill="url(#linear-gradient)"/>
-</svg>

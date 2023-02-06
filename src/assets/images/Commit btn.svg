@@ -1,6 +1,0 @@
-<svg xmlns="http://www.w3.org/2000/svg" width="45" height="45" viewBox="0 0 45 45">
-  <g id="Commit_btn" data-name="Commit btn" transform="translate(13)">
-    <rect id="bg" width="45" height="45" rx="10" transform="translate(-13)" fill="#4990e1"/>
-    <path id="check-mark" d="M155.509,169.385a1.615,1.615,0,0,1,0,2.274L144.8,182.443a1.589,1.589,0,0,1-2.258,0l-5.1-5.134a1.615,1.615,0,0,1,0-2.273,1.588,1.588,0,0,1,2.257,0l3.969,4,9.58-9.648A1.589,1.589,0,0,1,155.509,169.385Z" transform="translate(-136.977 -152.914)" fill="#fff"/>
-  </g>
-</svg>
